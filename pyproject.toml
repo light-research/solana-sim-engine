@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "solana-sim-engine"
+version = "0.1.0"
+description = "Natural language simulation engine for Solana protocols"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [
+    {name = "Solana Sim Engine Team"}
+]
+
+dependencies = [
+    "solders>=0.21.0",
+    "solana>=0.34.0",
+    "aiohttp>=3.9.0",
+    "openai>=1.12.0",
+    "httpx>=0.27.0",
+    "pyyaml>=6.0",
+    "rich>=13.0.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0",
+    "pytest-asyncio>=0.21.0",
+]
+
+[project.scripts]
+simengine = "simengine.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
