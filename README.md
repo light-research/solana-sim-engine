@@ -1,4 +1,4 @@
-# Solana Gauntlet
+# Solana Simulation Engine
 
 **Agentic Fuzzing & Adversarial Testing for Solana Programs**
 
