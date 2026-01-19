@@ -5,7 +5,7 @@
 [![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-Solana Gauntlet is an LLM-powered security testing framework that combines **agentic fuzzing** with **adversarial testing** to find vulnerabilities in Solana programs. It generates intelligent test scenarios, builds real transactions, executes them on [Surfpool](https://github.com/txtx/surfpool), and reports findings with CWE classifications.
+Sim-engine is an LLM-powered security testing framework that combines **agentic fuzzing** with **adversarial testing** to find vulnerabilities in Solana programs. It generates intelligent test scenarios, builds real transactions, executes them on [Surfpool](https://github.com/txtx/surfpool), and reports findings with CWE classifications.
 
 ---
 
@@ -79,12 +79,12 @@ brew install txtx/taps/surfpool
 surfpool --version
 ```
 
-### Install Solana Gauntlet
+### Install Sim Engine
 
 ```bash
 # Clone the repository
-git clone https://github.com/your-org/solana-gauntlet.git
-cd solana-gauntlet/solana-sim-engine
+git clone https://github.com/light-research/solana-sim-engine
+cd solana-sim-engine
 
 # Install with pip
 pip install -e .
